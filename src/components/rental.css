@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css?family=Abel|Montserrat|Patua+One");
+@import url("https://fonts.googleapis.com/css?family=Monoton");
+/*font-family: 'Abel', sans-serif;
+		font-family: 'Montserrat', sans-serif;
+		font-family: 'Patua One', cursive;
+		font-family: 'Monoton', cursive;*/
+
+@media (min-width: 1024px) {
+  .first {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 3%;
+  }
+
+  .first div {
+    flex: 1;
+  }
+
+  .first input {
+    width: 45%;
+  }
+
+  .images {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .imgs {
+    width: 47%;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 480px) {
+  .first {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 3%;
+  }
+
+  .first div {
+    flex: 1;
+  }
+
+  .first input {
+    width: 45%;
+  }
+  .images {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .imgs {
+    width: 47%;
+  }
+}
+
+.first input {
+  width: 85%;
+}
+
+.content-section {
+  margin-bottom: 30px;
+}
+
+.about-rental {
+  background-color: rgba(120, 120, 120, 0.1);
+}
+
+.about-rental .container {
+  position: relative;
+  margin-left: 10%;
+  padding-top: 20px;
+  width: 85%;
+}
+
+.about-rental .img-contain {
+  position: relative;
+  margin-top: 40px;
+  margin-left: 10%;
+  width: 80%;
+}
+
+.section-title h2 {
+  color: orange;
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+}
+
+.section-title p {
+  font-family: "Patua One", cursive;
+  margin-top: 10px;
+  line-height: 26px;
+  color: rgba(60, 60, 60, 0.8);
+}
+
+.message-box-section {
+  background-image: url("../pictures/violin.jpg");
+  background-repeat: no-repeat;
+  background-size: stretch;
+  padding: 5%;
+}
+.msg-head {
+  font-family: "Monoton", cursive;
+  color: rgb(238, 135, 110);
+  background: none;
+  border: none;
+  border-left: 3px #eee solid;
+  font-size: 30px;
+  margin-bottom: 30px;
+  margin-left: 4%;
+}
+
+.Input_Field {
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  margin-top: 25px;
+  border-radius: 20px;
+  border: none;
+  width: 30%;
+  height: 40px;
+  margin-left: 5%;
+  margin-bottom: 20px;
+  background-color: DodgerBlue;
+}
+
+input[type="text"],
+textarea {
+  border: 2px #fff ridge;
+  outline: none;
+  border-radius: 20px;
+  background-color: rgba(180, 180, 180, 0.4);
+  box-sizing: border-box;
+  font-size: 16px;
+  padding: 20px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 4%;
+  width: 90%;
+}
+::placeholder {
+  color: black;
+}
