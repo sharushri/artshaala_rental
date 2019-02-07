@@ -1,5 +1,24 @@
 import React, { Component } from "react";
 import "./rental.css";
+import styled, { css } from "styled-components";
+
+const H2 = styled.h2`
+  color: orange;
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+`;
+
+const Image = styled.img`
+  width: 100%;
+  margin-bottom: 20px;
+`;
+
+const Data = styled.p`
+  font-family: "Patua One", cursive;
+  margin-top: 10px;
+  line-height: 26px;
+  color: rgba(60, 60, 60, 0.8);
+`;
 
 class TextBox extends Component {
   render() {
@@ -7,9 +26,9 @@ class TextBox extends Component {
       <div className="about-rental">
         <div className="container">
           <div>
-            <div className="section-title text-left ">
-              <h2>Rental</h2>
-              <p>
+            <div className="section-title">
+              <H2>Rental</H2>
+              <Data>
                 Artshaala Music Store offers quality , new and used musical
                 instruments for rental that are maintained, cleaned and serviced
                 by a professional technicians. Rental musical instruments
@@ -17,7 +36,7 @@ class TextBox extends Component {
                 Amplifiers, Keyboards, Acoustic and electronic drum kits,
                 Tablas, Harmoniums, Dholaks, as well as Pro Audio systems
                 including speakers, amplifiers, mixers, mics, monitors etc.
-              </p>
+              </Data>
             </div>
           </div>
         </div>
@@ -25,25 +44,13 @@ class TextBox extends Component {
         <div className="img-contain">
           <div className="images">
             <div className="imgs">
-              <img
-                src={require("../pictures/image2.jpg")}
-                className="img-thumbnail"
-                style={{ width: 100 + "%", marginBottom: 20 + "px" }}
-              />
+              <Image src={require("../pictures/image2.jpg")} />
             </div>
             <div className="imgs">
-              <img
-                src={require("../pictures/image1.jpg")}
-                className="img-thumbnail"
-                style={{ width: 100 + "%", marginBottom: 20 + "px" }}
-              />
+              <Image src={require("../pictures/image1.jpg")} />
             </div>
           </div>
-          <img
-            src={require("../pictures/image4.png")}
-            className="img-rounded"
-            style={{ width: 100 + "%", marginBottom: 20 + "px" }}
-          />
+          <Image src={require("../pictures/image4.png")} />
         </div>
       </div>
     );
