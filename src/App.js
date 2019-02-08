@@ -2,17 +2,16 @@ import React, { Component } from "react";
 import "./App.css";
 import Message from "./components/message";
 import TextBox from "./components/textBox";
-import styled from "styled-components";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="content-section">
-          <div className="text">
+      <div id="App">
+        <div>
+          <div>
             <TextBox />
           </div>
-          <div className="msg">
+          <div>
             <Message />
           </div>
         </div>

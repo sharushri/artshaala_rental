@@ -16,7 +16,12 @@ const StyledMessage = styled.div`
     color: rgba(255, 255, 255, 0.7);
   }
 
-  .msg-head {
+  form div > div:first-child div,
+  form > div > div {
+    margin-bottom: 10px;
+  }
+
+  form > p {
     font-family: "Monoton", cursive;
     color: rgb(238, 135, 110);
     background: none;
@@ -48,20 +53,20 @@ class Message extends Component {
   render() {
     return (
       <StyledMessage>
-        <div className="message-box-section">
-          <div className="message-box">
+        <div id="message-box-section">
+          <div>
             <form>
-              <p className="msg-head">get in touch</p>
-              <div className="actual-form">
-                <div className="first">
-                  <div className="Input_Field">
+              <p>get in touch</p>
+              <div>
+                <div>
+                  <div>
                     <input
                       type="text"
                       name="name"
                       placeholder="Your name here"
                     />
                   </div>
-                  <div className="Input_Field">
+                  <div>
                     <input
                       type="text"
                       name="phone"
@@ -69,31 +74,27 @@ class Message extends Component {
                     />
                   </div>
                 </div>
-                <div className="Input_Field">
+                <div>
                   <input
                     type="text"
                     name="email"
                     placeholder="Your email here"
                   />
                 </div>
-                <div className="Input_Field">
+                <div>
                   <input
                     type="text"
                     name="subject"
                     placeholder="Subject here"
                   />
                 </div>
-                <div className="Input_Field">
-                  <textarea
-                    className="custom-textarea"
-                    name="message"
-                    placeholder="Message"
-                  />
+                <div>
+                  <textarea name="message" placeholder="Message" />
                 </div>
                 <input type="submit" />
               </div>
             </form>
-            <p className="form-message" />
+            <p />
           </div>
         </div>
       </StyledMessage>

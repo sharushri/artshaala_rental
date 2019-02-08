@@ -58,25 +58,25 @@
 }
 
 @media (min-width: 768px) {
-  .content-section {
+  #App > div {
     display: flex;
     justify-content: space-around;
   }
 
-  .text {
+  #App > div > div:first-child {
     order: 1;
     width: 50%;
   }
 
-  .msg {
+  #App > div > div:nth-child(2) {
     order: 2;
     width: 40%;
   }
 }
 
-.text {
+#App > div > div:first-child {
   margin: 3%;
 }
-.msg {
+#App > div > div:nth-child(2) {
   margin: 3%;
 }

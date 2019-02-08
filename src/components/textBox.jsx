@@ -23,10 +23,10 @@ const Data = styled.p`
 class TextBox extends Component {
   render() {
     return (
-      <div className="about-rental">
-        <div className="container">
+      <div id="about-rental">
+        <div>
           <div>
-            <div className="section-title">
+            <div>
               <H2>Rental</H2>
               <Data>
                 Artshaala Music Store offers quality , new and used musical
@@ -41,12 +41,12 @@ class TextBox extends Component {
           </div>
         </div>
 
-        <div className="img-contain">
-          <div className="images">
-            <div className="imgs">
+        <div>
+          <div>
+            <div>
               <Image src={require("../pictures/image2.jpg")} />
             </div>
-            <div className="imgs">
+            <div>
               <Image src={require("../pictures/image1.jpg")} />
             </div>
           </div>

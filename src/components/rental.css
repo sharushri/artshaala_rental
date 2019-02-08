@@ -6,83 +6,83 @@
 		font-family: 'Monoton', cursive;*/
 
 @media (min-width: 1024px) {
-  .first {
+  form div > div:first-child {
     display: flex;
     justify-content: space-between;
-    margin-left: 2%;
+    margin-left: 1%;
     margin-right: 3%;
   }
 
-  .first div {
+  form div > div:first-child div {
     flex: 1;
   }
 
-  .first input {
+  form div > div:first-child input {
     width: 45%;
   }
 
-  .images {
+  #about-rental > div:nth-child(2) > div {
     display: flex;
     justify-content: space-between;
   }
 
-  .imgs {
+  #about-rental > div:nth-child(2) > div > div {
     width: 47%;
   }
 }
 
 @media (max-width: 768px) and (min-width: 480px) {
-  .first {
+  form div > div:first-child {
     display: flex;
     justify-content: space-between;
-    margin-left: 2%;
+    margin-left: 1%;
     margin-right: 3%;
   }
 
-  .first div {
+  form div > div:first-child div {
     flex: 1;
   }
 
-  .first input {
+  form div > div:first-child input {
     width: 45%;
   }
-  .images {
+  #about-rental > div:nth-child(2) > div {
     display: flex;
     justify-content: space-between;
   }
 
-  .imgs {
+  #about-rental > div:nth-child(2) > div > div {
     width: 47%;
   }
 }
 
-.first input {
+form div > div:first-child input {
   width: 90%;
 }
 
-.content-section {
+/*.content-section {
   margin-bottom: 30px;
-}
+}*/
 
-.about-rental {
+#about-rental {
   background-color: rgba(120, 120, 120, 0.1);
 }
 
-.about-rental .container {
+#about-rental > div:first-child {
   position: relative;
   margin-left: 10%;
   padding-top: 20px;
   width: 85%;
 }
 
-.about-rental .img-contain {
+#about-rental > div:nth-child(2) {
   position: relative;
   margin-top: 40px;
   margin-left: 10%;
   width: 80%;
 }
 
-.message-box-section {
+#message-box-section {
   background-image: url("../pictures/violin.jpg");
   background-repeat: no-repeat;
   background-size: stretch;
@@ -91,10 +91,60 @@
   border-radius: 20px;
 }
 
+::placeholder {
+  color: black;
+}
+
+/*.section-title h2 {
+  color: orange;
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+}
+
+.section-title p {
+  font-family: "Patua One", cursive;
+  margin-top: 10px;
+  line-height: 26px;
+  color: rgba(60, 60, 60, 0.8);
+}
+
 .Input_Field {
   margin-bottom: 10px;
 }
 
-::placeholder {
-  color: black;
+.msg-head {
+  font-family: "Monoton", cursive;
+  color: rgb(238, 135, 110);
+  background: none;
+  border: none;
+  border-left: 3px #eee solid;
+  font-size: 30px;
+  margin-bottom: 30px;
+  margin-left: 4%;
 }
+
+input[type="submit"] {
+  margin-top: 25px;
+  border-radius: 20px;
+  border: none;
+  width: 30%;
+  height: 40px;
+  margin-left: 5%;
+  margin-bottom: 20px;
+  background-color: DodgerBlue;
+}
+
+input[type="text"],
+textarea {
+  border: 2px #fff ridge;
+  outline: none;
+  border-radius: 20px;
+  background-color: rgba(180, 180, 180, 0.4);
+  box-sizing: border-box;
+  font-size: 16px;
+  padding: 20px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 4%;
+  width: 90%;
+}*/
