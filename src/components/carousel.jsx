@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import "./rental.css";
 
 const imgUrls = [
-  "../pictures/image1.jpg",
-  "../pictures/image2.jpg",
-  "../pictures/image4.jpg"
+  require("../pictures/image1.jpg"),
+  require("../pictures/image2.jpg"),
+  require("../pictures/image4.png")
 ];
 
 class Carousel extends Component {
@@ -41,9 +41,14 @@ class Carousel extends Component {
   render() {
     return (
       <div className="carousels">
-        <Arrow direction="left" clickFunction={this.previousSlide} />
         <ImageSlide url={imgUrls[this.state.currentImageIndex]} />
-        <Arrow direction="right" clickFunction={this.nextSlide} />
+
+        <Arrow
+          direction="left"
+          clickFunction={this.previousSlide}
+          glyph="Left"
+        />
+        <Arrow direction="right" clickFunction={this.nextSlide} glyph="Right" />
       </div>
     );
   }
@@ -51,7 +56,7 @@ class Carousel extends Component {
 
 const ImageSlide = ({ url }) => {
   const styles = {
-    backgroundImage: `url(${url})`,
+    backgroundImage: `url('${url}')`,
     backgroundSize: "cover",
     backgroundPosition: "center"
   };
@@ -60,7 +65,7 @@ const ImageSlide = ({ url }) => {
 };
 
 const Arrow = ({ direction, clickFunction, glyph }) => (
-  <div className={`slide-arrow ${direction}`} onclick={clickFunction}>
+  <div className={`slide-arrow ${direction}`} onClick={clickFunction}>
     {glyph}
   </div>
 );
