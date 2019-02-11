@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./rental.css";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
+import Carousel from "./carousel";
 
 const H2 = styled.h2`
   color: orange;
@@ -42,15 +43,7 @@ class TextBox extends Component {
         </div>
 
         <div>
-          <div>
-            <div>
-              <Image src={require("../pictures/image2.jpg")} />
-            </div>
-            <div>
-              <Image src={require("../pictures/image1.jpg")} />
-            </div>
-          </div>
-          <Image src={require("../pictures/image4.png")} />
+          <Carousel />
         </div>
       </div>
     );
